@@ -18,8 +18,8 @@ int indexa(vector<int> a)
 			ci=i;
 			count=1;
 		}
-		return ci;
 		}	
+		return ci;
 }
 int major(vector <int> a)
 {
@@ -28,17 +28,16 @@ int major(vector <int> a)
 	for(int i=0;i<a.size();i++)
 	{
 		if(a[i]==a[index])
+		{
 				fre++;	
-		}	
+		}
+	}	
 	if(fre>a.size()/2)
 	{
 		return a[index];
 	}
-	else 
-	{
+	return 0;
 	
-		return 0;
-}
 }
 int main()
 {
